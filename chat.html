@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Text Editor and Viewer</title>
+    <script src="chatbot.js" defer></script> <!-- Include JavaScript file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="chat-header">
+        <nav>
+            <ul>
+                <li><a href="#index.html" onclick="closeChat()">Close Chat</a></li> <!-- Close chat link -->
+            </ul>
+        </nav>
+    </header>
+    <div id="chat-container">
+        <!-- <div class="ask-me">
+            <h4 style="font-weight: 500;">Ask me</h4>
+        </div> -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be dynamically added here -->
+            <div class="message help-message">Hello! How can I help you today?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+
+</html>
